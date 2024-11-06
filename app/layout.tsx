@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./components/header";
 
 const dreamAvenue = localFont({
   src: "./fonts/DreamAvenue.ttf",
@@ -24,8 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dreamAvenue.variable} ${scripter.variable} antialiased`}
+        className={`${dreamAvenue.variable} ${scripter.variable} antialiased bg-isness-white`}
       >
+        <Header />
         {children}
       </body>
     </html>
