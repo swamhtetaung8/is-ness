@@ -38,7 +38,7 @@ const Header = () => {
         {/* Logo */}
         <Link
           href="/"
-          className="w-[48px] h-[48px] md:w-[80px] md:h-[80px] relative"
+          className="w-[48px] h-[48px] md:w-[56px] md:h-[56px] relative"
         >
           <Image src="/logo.svg" fill alt="Logo of the company" />
         </Link>
