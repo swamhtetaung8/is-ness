@@ -41,7 +41,7 @@ const customCarouselTheme: CustomFlowbiteTheme = {
 const HeroSection = () => {
   return (
     <section>
-      <div className="h-[600px] md:h-[800px] relative">
+      <div className="h-[calc(100vh-80px)] relative">
         {/* Slideshow */}
         <Flowbite theme={{ theme: customCarouselTheme }}>
           <Carousel draggable={false} pauseOnHover>
