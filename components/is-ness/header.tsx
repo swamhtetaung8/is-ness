@@ -14,24 +14,26 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import Container from "@/components/is-ness/container";
+import TextNormal from "@/components/is-ness/text/textNormal";
+import HeadingTwo from "@/components/is-ness/text/headingTwo";
 
 const Header = () => {
   return (
     <Container>
-      <nav className="font-Scripter py-[24px] relative flex items-center justify-between">
+      <nav className="font-Scripter py-[16px] relative flex items-center justify-between">
         {/* Links Section */}
         <div className="flex items-center gap-[24px] md:gap-[48px] flex-1">
           <Link
             href="/"
-            className="underline hover:text-isness-primary transition-colors duration-200 text-[16px] md:text-[18px]"
+            className="underline hover:text-isness-primary transition-colors duration-200"
           >
-            Home
+            <TextNormal>Home</TextNormal>
           </Link>
           <Link
             href="/shop"
-            className="underline hover:text-isness-primary transition-colors duration-200 text-[16px] md:text-[18px]"
+            className="underline hover:text-isness-primary transition-colors duration-200"
           >
-            Shop
+            <TextNormal>Shop</TextNormal>
           </Link>
         </div>
 
@@ -45,6 +47,7 @@ const Header = () => {
 
         {/* Hamburger Menu */}
         <div className="flex-1 flex justify-end">
+          {/* Drawer box */}
           <Drawer>
             <DrawerTrigger asChild>
               <Menu className="cursor-pointer" />
@@ -57,27 +60,31 @@ const Header = () => {
                   </h1>
                 </DrawerTitle>
                 <DrawerDescription>
-                  <div className="text-center font-Scripter text-[16px] md:text-[24px] space-y-2">
-                    <p>your milk, their comfort</p>
-                    <p>EST 2024</p>
+                  <div className="text-center font-Scripter space-y-2">
+                    <p>
+                      <HeadingTwo>your milk, their comfort</HeadingTwo>
+                    </p>
+                    <p>
+                      <HeadingTwo>EST 2024</HeadingTwo>
+                    </p>
                   </div>
                   <Container>
-                    <div className="flex justify-between items-center mt-5 md:mt-10 flex-col md:flex-row">
-                      <p>A:Yen Akat Sathorn, Bangkok 10120</p>
-                      <p>T:+66 971739617</p>
+                    <div className="flex justify-between items-center mt-5 md:mt-10 flex-col md:flex-row font-Scripter">
+                      <TextNormal>A:Yen Akat Sathorn, Bangkok 10120</TextNormal>
+                      <TextNormal>T:+66 971739617</TextNormal>
                       <Link
                         href="https://www.instagram.com/1theisness/"
                         target="_blank"
                         className="hover:text-black transition-all duration-200 hover:underline"
                       >
-                        Instagram
+                        <TextNormal>Instagram</TextNormal>
                       </Link>
                       <Link
                         href=""
                         target="_blank"
                         className="hover:text-black transition-all duration-200 hover:underline"
                       >
-                        Line
+                        <TextNormal>Line</TextNormal>
                       </Link>
                     </div>
                   </Container>
