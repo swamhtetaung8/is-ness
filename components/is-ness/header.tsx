@@ -14,8 +14,8 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import Container from "@/components/is-ness/container";
-import TextNormal from "@/components/is-ness/text/textNormal";
-import HeadingTwo from "@/components/is-ness/text/headingTwo";
+import SubHeading from "@/components/is-ness/text/subHeading";
+import NormalText from "@/components/is-ness/text/normalText";
 
 const Header = () => {
   return (
@@ -27,13 +27,13 @@ const Header = () => {
             href="/"
             className="underline hover:text-isness-primary transition-colors duration-200"
           >
-            <TextNormal>Home</TextNormal>
+            <NormalText>Home</NormalText>
           </Link>
           <Link
             href="/shop"
             className="underline hover:text-isness-primary transition-colors duration-200"
           >
-            <TextNormal>Shop</TextNormal>
+            <NormalText>Shop</NormalText>
           </Link>
         </div>
 
@@ -59,29 +59,29 @@ const Header = () => {
                 <DrawerDescription>
                   <div className="text-center font-Scripter space-y-2">
                     <p>
-                      <HeadingTwo>your milk, their comfort</HeadingTwo>
+                      <SubHeading>your milk, their comfort</SubHeading>
                     </p>
                     <p>
-                      <HeadingTwo>EST 2024</HeadingTwo>
+                      <SubHeading>EST 2024</SubHeading>
                     </p>
                   </div>
                   <Container>
                     <div className="flex justify-between items-center mt-5 md:mt-10 flex-col md:flex-row font-Scripter">
-                      <TextNormal>A:Yen Akat Sathorn, Bangkok 10120</TextNormal>
-                      <TextNormal>T:+66 971739617</TextNormal>
+                      <NormalText>A:Yen Akat Sathorn, Bangkok 10120</NormalText>
+                      <NormalText>T:+66 971739617</NormalText>
                       <Link
                         href="https://www.instagram.com/1theisness/"
                         target="_blank"
                         className="hover:text-black transition-all duration-200 hover:underline"
                       >
-                        <TextNormal>Instagram</TextNormal>
+                        <NormalText>Instagram</NormalText>
                       </Link>
                       <Link
                         href=""
                         target="_blank"
                         className="hover:text-black transition-all duration-200 hover:underline"
                       >
-                        <TextNormal>Line</TextNormal>
+                        <NormalText>Line</NormalText>
                       </Link>
                     </div>
                   </Container>

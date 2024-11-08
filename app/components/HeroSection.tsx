@@ -1,4 +1,7 @@
+"use client";
+
 import Button from "@/components/is-ness/button";
+import ScrollButton from "@/components/is-ness/scrollButton";
 import { Carousel, CustomFlowbiteTheme, Flowbite } from "flowbite-react";
 import React from "react";
 
@@ -64,7 +67,9 @@ const HeroSection = () => {
               Welcome to Your Baby's Skin Journey
             </h1>
             <div className="space-x-4">
-              <Button variant="secondary">View More</Button>
+              <ScrollButton href="#more-information" variant="secondary">
+                View More
+              </ScrollButton>
               <Button variant="primary">Shop Now</Button>
             </div>
           </div>

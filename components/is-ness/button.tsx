@@ -1,6 +1,6 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import TextNormal from "@/components/is-ness/text/textNormal";
+import NormalText from "@/components/is-ness/text/normalText";
 
 interface ButtonProps {
   children: React.ReactNode;
@@ -17,7 +17,7 @@ const Button = ({ children, variant }: ButtonProps) => {
           variant === "secondary",
       })}
     >
-      <TextNormal>{children}</TextNormal>
+      <NormalText>{children}</NormalText>
     </button>
   );
 };
