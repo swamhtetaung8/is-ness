@@ -1,6 +1,5 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import NormalText from "@/components/is-ness/text/normalText";
 
 interface ScrollButtonProps {
   children: React.ReactNode;
