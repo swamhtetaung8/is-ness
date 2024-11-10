@@ -2,6 +2,7 @@ import HeroSection from "./components/HeroSection";
 import HowToUseSection from "./components/HowToUseSection";
 import IngredientsSection from "./components/IngredientsSection";
 import MoreInformationSection from "./components/MoreInformationSection";
+import QuoteSection from "./components/QuoteSection";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <MoreInformationSection />
       <IngredientsSection />
       <HowToUseSection />
+      <QuoteSection />
     </main>
   );
 }

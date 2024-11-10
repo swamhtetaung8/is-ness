@@ -12,7 +12,7 @@ const MoreInformationSection = () => {
   return (
     <Container
       includePaddingBlock
-      additionalClassName="flex gap-[32px] md:gap-[48px] lg:gap-[72px] justify-between flex-col lg:flex-row"
+      className="flex gap-[32px] md:gap-[48px] lg:gap-[72px] justify-between flex-col lg:flex-row"
     >
       <div
         id="more-information"

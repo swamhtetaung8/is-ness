@@ -3,19 +3,19 @@ import React from "react";
 interface ContainerProps {
   children: React.ReactNode;
   includePaddingBlock?: boolean;
-  additionalClassName?: string;
+  className?: string;
 }
 
 const Container = ({
   children,
   includePaddingBlock = false,
-  additionalClassName = "",
+  className = "",
 }: ContainerProps) => {
   return (
     <div
       className={`px-[16px] md:px-[64px] lg:px-[88px] ${
         includePaddingBlock ? "py-[24px] md:py-[54px] lg:py-[72px]" : ""
-      } ${additionalClassName}`}
+      } ${className}`}
     >
       {children}
     </div>
