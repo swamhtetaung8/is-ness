@@ -8,7 +8,7 @@ const SecondaryHeading = ({
   className?: string;
 }) => {
   return (
-    <h3 className={`text-[16px] md:text-[32px] font-Scripter ${className}`}>
+    <h3 className={`text-[18px] md:text-[28px] font-Scripter ${className}`}>
       {children}
     </h3>
   );

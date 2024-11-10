@@ -3,6 +3,7 @@ import HowToUseSection from "./components/HowToUseSection";
 import IngredientsSection from "./components/IngredientsSection";
 import MoreInformationSection from "./components/MoreInformationSection";
 import QuoteSection from "./components/QuoteSection";
+import SafeAndSimpleDeliveryProcessSection from "./components/SafeAndSimpleDeliveryProcessSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <IngredientsSection />
       <HowToUseSection />
       <QuoteSection />
+      <SafeAndSimpleDeliveryProcessSection />
     </main>
   );
 }

@@ -6,7 +6,7 @@ const HeadingAndParagraphContainer = ({
   children: React.ReactNode;
 }) => {
   return (
-    <div className="space-y-[32px] md:space-y-[48px] lg:space-y-[64px]">
+    <div className="space-y-[32px] md:space-y-[40px] lg:space-y-[56px]">
       {children}
     </div>
   );
