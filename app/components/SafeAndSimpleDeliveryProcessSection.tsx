@@ -7,7 +7,7 @@ import React from "react";
 
 const SafeAndSimpleDeliveryProcessSection = () => {
   return (
-    <section className="flex bg-white flex-col lg:flex-row">
+    <section className="flex bg-white flex-col xl:flex-row">
       <div className="flex-1">
         <Container includePaddingBlock>
           <HeadingAndParagraphContainer>
@@ -35,7 +35,7 @@ const SafeAndSimpleDeliveryProcessSection = () => {
           </HeadingAndParagraphContainer>
         </Container>
       </div>
-      <div className="flex-1 h-[670px] w-full relative hidden lg:block">
+      <div className="flex-1 h-[670px] w-full relative hidden xl:block">
         <Image
           fill
           src="/safe-and-simple-delivery-process/product-image.jpg"
@@ -43,7 +43,7 @@ const SafeAndSimpleDeliveryProcessSection = () => {
           className="object-cover"
         ></Image>
       </div>
-      <div className="relative w-full h-[400px] md:h-[540px] rounded-lg overflow-hidden block lg:hidden">
+      <div className="relative w-full h-[400px] md:h-[540px] overflow-hidden block xl:hidden">
         <Image
           fill
           src="/safe-and-simple-delivery-process/product-image.jpg"

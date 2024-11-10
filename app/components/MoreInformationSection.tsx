@@ -12,11 +12,11 @@ const MoreInformationSection = () => {
   return (
     <Container
       includePaddingBlock
-      className="flex gap-[32px] md:gap-[48px] lg:gap-[72px] justify-between flex-col lg:flex-row"
+      className="flex gap-[32px] md:gap-[48px] lg:gap-[72px] justify-between flex-col xl:flex-row"
     >
       <div
         id="more-information"
-        className="flex-1 h-[670px] relative rounded-lg overflow-hidden hidden lg:block"
+        className="flex-1 h-[670px] relative rounded-lg overflow-hidden hidden xl:block"
       >
         <Image
           fill
@@ -25,7 +25,7 @@ const MoreInformationSection = () => {
           className="object-cover"
         ></Image>
       </div>
-      <div className="relative w-full h-[400px] md:h-[540px] rounded-lg overflow-hidden block lg:hidden">
+      <div className="relative w-full h-[400px] md:h-[540px] rounded-lg overflow-hidden block xl:hidden">
         <Image
           fill
           src="/more-information/more-information-image.jpg"
