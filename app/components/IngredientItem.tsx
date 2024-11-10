@@ -19,9 +19,10 @@ interface IngredientItemProps {
 
 const IngredientItem = ({ ingredient }: IngredientItemProps) => {
   return (
-    <HoverCard>
+    <HoverCard openDelay={0.5} closeDelay={0.5}>
       <HoverCardTrigger>
         <div className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] rounded-lg overflow-hidden shadow-lg cursor-pointer relative group">
+          <div className="group-hover:opacity-20 opacity-0 pointer-events-none transition-all duration-500 bg-black absolute top-0 left-0 w-full h-full z-20"></div>
           <Image
             fill
             src={ingredient.image}
