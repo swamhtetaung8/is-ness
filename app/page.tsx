@@ -1,6 +1,7 @@
 import HeroSection from "./components/HeroSection";
 import HowToUseSection from "./components/HowToUseSection";
 import IngredientsSection from "./components/IngredientsSection";
+import MadeWithLoveSection from "./components/MadeWithLoveSection";
 import MoreInformationSection from "./components/MoreInformationSection";
 import PricingSection from "./components/PricingSection";
 import QuoteSection from "./components/QuoteSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <QuoteSection />
       <SafeAndSimpleDeliveryProcessSection />
       <PricingSection />
+      <MadeWithLoveSection />
     </main>
   );
 }

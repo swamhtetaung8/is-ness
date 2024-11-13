@@ -15,7 +15,7 @@ const Card = ({ image, mainText, description }: CardProps) => {
   return (
     <div className="space-y-[24px] flex flex-col items-center text-center lg:items-start lg:text-left">
       <div
-        className={`${imageClass} w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] relative`}
+        className={`${imageClass} overflow-hidden w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] relative`}
       >
         <Image
           src={image}
