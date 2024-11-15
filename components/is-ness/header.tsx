@@ -58,12 +58,8 @@ const Header = () => {
                 </DrawerTitle>
                 <DrawerDescription>
                   <div className="text-center font-Scripter space-y-2">
-                    <p>
-                      <SubHeading>your milk, their comfort</SubHeading>
-                    </p>
-                    <p>
-                      <SubHeading>EST 2024</SubHeading>
-                    </p>
+                    <SubHeading>your milk, their comfort</SubHeading>
+                    <SubHeading>EST 2024</SubHeading>
                   </div>
                   <Container>
                     <div className="flex justify-between items-center mt-5 md:mt-10 flex-col md:flex-row font-Scripter">

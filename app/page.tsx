@@ -1,6 +1,7 @@
 import HeroSection from "./components/HeroSection";
 import HowToUseSection from "./components/HowToUseSection";
 import IngredientsSection from "./components/IngredientsSection";
+import IsNessSection from "./components/IsNessSection";
 import MadeWithLoveSection from "./components/MadeWithLoveSection";
 import MoreInformationSection from "./components/MoreInformationSection";
 import PricingSection from "./components/PricingSection";
@@ -18,6 +19,7 @@ export default function Home() {
       <SafeAndSimpleDeliveryProcessSection />
       <PricingSection />
       <MadeWithLoveSection />
+      <IsNessSection />
     </main>
   );
 }
