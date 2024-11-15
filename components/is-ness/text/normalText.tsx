@@ -8,7 +8,9 @@ const NormalText = ({
   className?: string;
 }) => {
   return (
-    <p className={`text-[14px] md:text-[18px] ${className}`}>{children}</p>
+    <p className={`text-[14px] md:text-[18px] ${className} font-Scripter`}>
+      {children}
+    </p>
   );
 };
 

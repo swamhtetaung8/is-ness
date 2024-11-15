@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/is-ness/header";
+import Footer from "@/components/is-ness/footer";
 
 const dreamAvenue = localFont({
   src: "./fonts/DreamAvenue.ttf",
@@ -29,6 +30,7 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
