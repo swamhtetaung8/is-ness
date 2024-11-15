@@ -13,19 +13,21 @@ const Card = ({ image, mainText, description }: CardProps) => {
   const imageClass = isPng ? "" : "rounded-lg";
 
   return (
-    <div className="space-y-[24px] flex flex-col items-center text-center lg:items-start lg:text-left">
+    <div className="space-y-[24px] flex flex-col items-center xl:items-start">
       <div
-        className={`${imageClass} overflow-hidden w-[100px] h-[100px] lg:w-[200px] lg:h-[200px] relative`}
+        className={`${imageClass} overflow-hidden w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] relative`}
       >
         <Image
           src={image}
           alt={`${mainText} Icon`}
           fill
-          className="object-contain object-center lg:object-left"
+          className="object-contain object-center xl:object-left"
         />
       </div>
       <div className="space-y-[8px]">
-        <SecondaryHeading>{mainText}</SecondaryHeading>
+        <SecondaryHeading className="text-center xl:text-left">
+          {mainText}
+        </SecondaryHeading>
         <NormalText>{description}</NormalText>
       </div>
     </div>

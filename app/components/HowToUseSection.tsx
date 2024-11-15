@@ -33,7 +33,7 @@ const HowToUseSection = () => {
     <Container includePaddingBlock>
       <HeadingAndParagraphContainer>
         <MainHeading>How To Use Your Breast Milk Lotion</MainHeading>
-        <div className="grid lg:grid-cols-3 gap-[32px] lg:gap-[64px] md:grid-cols-2 grid-cols-1">
+        <div className="grid xl:grid-cols-3 gap-[32px] lg:gap-[64px] md:grid-cols-2 grid-cols-1">
           {howToUseSteps.map((howToUseStep) => (
             <Card {...howToUseStep} key={howToUseStep.id} />
           ))}

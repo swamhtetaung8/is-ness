@@ -10,9 +10,8 @@ const madeWithLoveSteps = [
     id: 1,
     image: "/made-with-love/custom-engraving.jpg",
     mainText: (
-      <span className="flex items-center lg:gap-4 flex-col lg:flex-row">
-        <span>Custom engraving to cherish</span>{" "}
-        <Signature className="w-6 h-6" />
+      <span className="flex items-center xl:gap-4 flex-col xl:flex-row">
+        <span>Custom engraving</span> <Signature className="w-6 h-6" />
       </span>
     ),
     description:
@@ -22,7 +21,7 @@ const madeWithLoveSteps = [
     id: 2,
     image: "/made-with-love/eco-friendly.jpg",
     mainText: (
-      <span className="flex items-center lg:gap-4 flex-col lg:flex-row">
+      <span className="flex items-center xl:gap-4 flex-col xl:flex-row">
         <span>Eco-Friendly Packaging</span> <Recycle className="w-6 h-6" />
       </span>
     ),
@@ -33,7 +32,7 @@ const madeWithLoveSteps = [
     id: 3,
     image: "/made-with-love/more-than-just-a-product.jpg",
     mainText: (
-      <span className="flex items-center lg:gap-4 flex-col lg:flex-row">
+      <span className="flex items-center xl:gap-4 flex-col xl:flex-row">
         <span>More than just a product</span> <HandHeart className="w-6 h-6" />
       </span>
     ),
@@ -49,7 +48,7 @@ const MadeWithLoveSection = () => {
         <MainHeading className="text-center">
           Made With Love For Your Newborn
         </MainHeading>
-        <div className="grid lg:grid-cols-3 gap-[32px] lg:gap-[64px] md:grid-cols-2 grid-cols-1">
+        <div className="grid xl:grid-cols-3 gap-[32px] lg:gap-[64px] md:grid-cols-2 grid-cols-1">
           {madeWithLoveSteps.map((madeWithLoveStep) => (
             <Card {...madeWithLoveStep} key={madeWithLoveStep.id} />
           ))}
