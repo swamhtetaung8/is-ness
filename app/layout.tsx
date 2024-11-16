@@ -16,6 +16,9 @@ const scripter = localFont({
 export const metadata: Metadata = {
   title: "is~ness",
   description: "your milk, their comfort.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
