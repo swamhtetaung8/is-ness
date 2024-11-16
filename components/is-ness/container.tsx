@@ -13,7 +13,7 @@ const Container = ({
 }: ContainerProps) => {
   return (
     <div
-      className={`px-[16px] md:px-[64px] lg:px-[88px] ${
+      className={`px-[32px] md:px-[64px] lg:px-[88px] ${
         includePaddingBlock ? "py-[24px] md:py-[54px] lg:py-[72px]" : ""
       } ${className}`}
     >
