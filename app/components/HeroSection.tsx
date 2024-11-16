@@ -59,7 +59,7 @@ const HeroSection = () => {
 
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-end text-center text-white py-20">
           {/* Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70 z-10"></div>
 
           {/* Hero Section Text and Buttons */}
           <div className="relative z-20 px-[16px] lg:px-0">
