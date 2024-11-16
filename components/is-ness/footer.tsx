@@ -56,12 +56,12 @@ const Footer = () => {
                   alt="icon of line messaging app"
                 ></Image>
               </div>
-              <Link
-                href="/shop"
+              <a
+                href=""
                 className="underline hover:text-isness-primary transition-colors duration-200"
               >
                 <NormalText>@isness</NormalText>
-              </Link>{" "}
+              </a>{" "}
             </div>
           </div>
         </div>

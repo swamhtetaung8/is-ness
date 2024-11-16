@@ -29,12 +29,12 @@ const Header = () => {
           >
             <NormalText>Home</NormalText>
           </Link>
-          <Link
-            href="/shop"
+          <a
+            href=""
             className="underline hover:text-isness-primary transition-colors duration-200"
           >
             <NormalText>Shop</NormalText>
-          </Link>
+          </a>
         </div>
 
         {/* Logo */}
@@ -72,13 +72,12 @@ const Header = () => {
                       >
                         <NormalText>Instagram</NormalText>
                       </Link>
-                      <Link
+                      <a
                         href=""
-                        target="_blank"
                         className="hover:text-black transition-all duration-200 hover:underline"
                       >
                         <NormalText>Line</NormalText>
-                      </Link>
+                      </a>
                     </div>
                   </Container>
                 </DrawerDescription>
