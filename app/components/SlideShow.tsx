@@ -9,29 +9,40 @@ const SlideShow = () => {
     alt: `slideshow-image-${i + 1}`,
   }));
 
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
   let isDragging = false;
   let startX = 0;
   let scrollLeft = 0;
 
   // Handle mouse and touch events
-  const handleStart = (e) => {
+  const handleStart = (e: React.MouseEvent | React.TouchEvent) => {
+    if (!containerRef.current) return;
+
     isDragging = true;
-    const clientX = e.type === "mousedown" ? e.pageX : e.touches[0].clientX;
+    const clientX =
+      e.type === "mousedown"
+        ? (e as React.MouseEvent).pageX
+        : (e as React.TouchEvent).touches[0].clientX;
     startX = clientX - containerRef.current.offsetLeft;
     scrollLeft = containerRef.current.scrollLeft;
     containerRef.current.style.scrollBehavior = "auto";
   };
 
-  const handleMove = (e) => {
-    if (!isDragging) return;
-    const clientX = e.type === "mousemove" ? e.pageX : e.touches[0].clientX;
+  const handleMove = (e: React.MouseEvent | React.TouchEvent) => {
+    if (!isDragging || !containerRef.current) return;
+
+    const clientX =
+      e.type === "mousemove"
+        ? (e as React.MouseEvent).pageX
+        : (e as React.TouchEvent).touches[0].clientX;
     const x = clientX - containerRef.current.offsetLeft;
     const walk = x - startX;
     containerRef.current.scrollLeft = scrollLeft - walk;
   };
 
   const handleEnd = () => {
+    if (!containerRef.current) return;
+
     isDragging = false;
     containerRef.current.style.scrollBehavior = "smooth";
   };
