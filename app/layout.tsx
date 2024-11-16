@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/is-ness/header";
+import Footer from "@/components/is-ness/footer";
 
 const dreamAvenue = localFont({
   src: "./fonts/DreamAvenue.ttf",
@@ -14,6 +16,9 @@ const scripter = localFont({
 export const metadata: Metadata = {
   title: "is~ness",
   description: "your milk, their comfort.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
@@ -24,9 +29,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dreamAvenue.variable} ${scripter.variable} antialiased`}
+        className={`${dreamAvenue.variable} ${scripter.variable} antialiased bg-isness-white`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
