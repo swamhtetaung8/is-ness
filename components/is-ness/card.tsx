@@ -10,13 +10,13 @@ interface CardProps {
 
 const Card = ({ image, mainText, description }: CardProps) => {
   const isPng = image.endsWith(".png");
-  const imageClass = isPng ? "" : "rounded-lg";
+  const imageClass = isPng
+    ? "w-[100px] h-[100px] lg:w-[150px] lg:h-[150px]"
+    : "rounded-lg w-[150px] h-[150px] lg:w-[200px] lg:h-[200px]";
 
   return (
     <div className="space-y-[24px] flex flex-col items-center xl:items-start">
-      <div
-        className={`${imageClass} overflow-hidden w-[150px] h-[150px] lg:w-[200px] lg:h-[200px] relative`}
-      >
+      <div className={`${imageClass} overflow-hidden relative`}>
         <Image
           src={image}
           alt={`${mainText} Icon`}

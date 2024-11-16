@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dreamAvenue.variable} ${scripter.variable} antialiased bg-isness-white`}
+        className={`${dreamAvenue.variable} ${scripter.variable} antialiased bg-isness-white w-full overflow-x-hidden`}
       >
         <Header />
         {children}
