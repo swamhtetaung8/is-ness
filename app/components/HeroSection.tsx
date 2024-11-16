@@ -10,9 +10,9 @@ const customCarouselTheme: CustomFlowbiteTheme = {
   carousel: {
     root: {
       leftControl:
-        "absolute left-0 top-0 flex h-full items-center justify-center pl-[16px] md:pl-[64px] lg:pl-[88px] focus:outline-none",
+        "absolute left-0 top-0 flex h-full items-center justify-center pl-[16px] md:pl-[64px] lg:pl-[88px] focus:outline-none z-20",
       rightControl:
-        "absolute right-0 top-0 flex h-full items-center justify-center pr-[16px] md:pr-[64px] lg:pr-[88px] focus:outline-none",
+        "absolute right-0 top-0 flex h-full items-center justify-center pr-[16px] md:pr-[64px] lg:pr-[88px] focus:outline-none z-20",
     },
     indicators: {
       active: {
