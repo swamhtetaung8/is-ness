@@ -7,6 +7,7 @@ import MoreInformationSection from "./components/MoreInformationSection";
 import PricingSection from "./components/PricingSection";
 import QuoteSection from "./components/QuoteSection";
 import SafeAndSimpleDeliveryProcessSection from "./components/SafeAndSimpleDeliveryProcessSection";
+import SlideShow from "./components/SlideShow";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <SafeAndSimpleDeliveryProcessSection />
       <PricingSection />
       <MadeWithLoveSection />
+      <SlideShow />
       <IsNessSection />
     </main>
   );
