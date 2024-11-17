@@ -1,5 +1,6 @@
 "use client";
 
+import AnchorTag from "@/components/is-ness/anchor_tag";
 import Button from "@/components/is-ness/button";
 import ScrollButton from "@/components/is-ness/scrollButton";
 import { Carousel, CustomFlowbiteTheme, Flowbite } from "flowbite-react";
@@ -93,7 +94,13 @@ const HeroSection = () => {
               <ScrollButton href="#more-information" variant="secondary">
                 View More
               </ScrollButton>
-              <Button variant="primary">Shop Now</Button>
+              <AnchorTag
+                href="https://line.me/R/ti/p/@674uogcn?from=page&accountId=674uogcn"
+                target
+                variant="primary"
+              >
+                Shop Now
+              </AnchorTag>
             </div>
           </div>
         </div>

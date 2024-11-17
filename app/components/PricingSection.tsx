@@ -1,3 +1,4 @@
+import AnchorTag from "@/components/is-ness/anchor_tag";
 import Button from "@/components/is-ness/button";
 import Container from "@/components/is-ness/container";
 import DescriptivePanel from "@/components/is-ness/descriptivePanel";
@@ -38,7 +39,13 @@ const PricingSection = () => {
                 heading="Returning Customers - ฿2,500 / jar"
                 description="As a returning customer, you’ll receive your lotion in eco-friendly packaging, keeping it gentle on the planet while maintaining the same quality and care."
               />
-              <Button variant="primary">Shop Now</Button>
+              <AnchorTag
+                href="https://line.me/R/ti/p/@674uogcn?from=page&accountId=674uogcn"
+                target
+                variant="primary"
+              >
+                Shop Now
+              </AnchorTag>{" "}
             </div>
           </HeadingAndParagraphContainer>
         </Container>

@@ -30,7 +30,8 @@ const Header = () => {
             <NormalText>Home</NormalText>
           </Link>
           <a
-            href=""
+            href="https://line.me/R/ti/p/@674uogcn?from=page&accountId=674uogcn"
+            target="_blank"
             className="underline hover:text-isness-primary transition-colors duration-200"
           >
             <NormalText>Shop</NormalText>
@@ -73,7 +74,8 @@ const Header = () => {
                         <NormalText>Instagram</NormalText>
                       </Link>
                       <a
-                        href=""
+                        href="https://line.me/R/ti/p/@674uogcn?from=page&accountId=674uogcn"
+                        target="_blank"
                         className="hover:text-black transition-all duration-200 hover:underline"
                       >
                         <NormalText>Line</NormalText>

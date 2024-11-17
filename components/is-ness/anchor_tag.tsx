@@ -2,14 +2,21 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import NormalText from "@/components/is-ness/text/normalText";
 
-interface ButtonProps {
+interface AnchorTagProps {
   children: React.ReactNode;
   variant: "primary" | "secondary";
+  href: string;
+  target?: boolean;
 }
 
-const Button = ({ children, variant, ...props }: ButtonProps) => {
+const AnchorTag = ({
+  children,
+  variant,
+  href,
+  target = false,
+}: AnchorTagProps) => {
   return (
-    <button
+    <a
       className={cn(
         "px-6 md:px-8 py-2 transition-colors duration-300 inline-block",
         {
@@ -19,11 +26,12 @@ const Button = ({ children, variant, ...props }: ButtonProps) => {
             variant === "secondary",
         }
       )}
-      {...props}
+      href={href}
+      target={target ? "_blank" : "_self"}
     >
       <NormalText>{children}</NormalText>
-    </button>
+    </a>
   );
 };
 
-export default Button;
+export default AnchorTag;
