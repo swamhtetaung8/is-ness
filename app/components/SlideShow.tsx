@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useRef } from "react";
 
 const SlideShow = () => {
-  const images = Array.from({ length: 12 }, (_, i) => ({
+  const images = Array.from({ length: 16 }, (_, i) => ({
     src: `/slideshow/image-${i + 1}.jpg`,
     alt: `slideshow-image-${i + 1}`,
   }));
