@@ -26,7 +26,7 @@ const ingredients = [
   {
     id: 3,
     name: "cocoa butter",
-    image: "/ingredients/cocoa-butter.jpg",
+    image: "/ingredients/coconut-butter.jpg",
     explanation:
       "Enriched with essential fatty acids, works synergistically with the nutrients from breast milk to deeply nourish each layer of a baby’s brand-new skin. This combination provides intensive hydration, enhances skin elasticity",
   },
