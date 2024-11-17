@@ -42,8 +42,11 @@ const IngredientItem = ({ ingredient }: IngredientItemProps) => {
         <HoverCard open={isOpen} openDelay={0.5} closeDelay={0.5}>
           <HoverCardTrigger onClick={toggleOpen}>
             <div
-              className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] rounded-lg overflow-hidden shadow-lg cursor-pointer relative group"
+              className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] rounded-lg overflow-hidden shadow-xl cursor-pointer relative group"
               ref={cardRef}
+              style={{
+                boxShadow: "0 8px 30px rgba(0, 0, 0, 0.25)",
+              }}
             >
               <div
                 className={`opacity-0 pointer-events-none transition-all duration-500 bg-black absolute top-0 left-0 w-full h-full z-20 ${
@@ -74,7 +77,12 @@ const IngredientItem = ({ ingredient }: IngredientItemProps) => {
       <div className="hidden xl:block">
         <HoverCard openDelay={0.5} closeDelay={0.5}>
           <HoverCardTrigger>
-            <div className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] rounded-lg overflow-hidden shadow-lg cursor-pointer relative group">
+            <div
+              className="w-[100px] h-[100px] md:w-[150px] md:h-[150px] lg:w-[200px] lg:h-[200px] rounded-lg overflow-hidden shadow-xl cursor-pointer relative group"
+              style={{
+                boxShadow: "0 8px 30px rgba(0, 0, 0, 0.25)",
+              }}
+            >
               <div className="group-hover:opacity-20 opacity-0 pointer-events-none transition-all duration-500 bg-black absolute top-0 left-0 w-full h-full z-20"></div>
               <Image
                 fill
