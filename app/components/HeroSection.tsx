@@ -3,6 +3,7 @@
 import Button from "@/components/is-ness/button";
 import ScrollButton from "@/components/is-ness/scrollButton";
 import { Carousel, CustomFlowbiteTheme, Flowbite } from "flowbite-react";
+import Image from "next/image";
 import React from "react";
 
 // Modified default styling from https://flowbite-react.com/docs/components/carousel
@@ -48,13 +49,35 @@ const HeroSection = () => {
         {/* Slideshow */}
         <Flowbite theme={{ theme: customCarouselTheme }}>
           <Carousel draggable={false} pauseOnHover>
-            <img src="/hero/hero-image-1.jpg" alt="Multiple products image" />
-            <img src="/hero/hero-image-2.jpg" alt="Product image with a baby" />
-            <img
-              src="/hero/hero-image-3.jpg"
-              alt="Multiple products image with a toy"
-            />
+            <div className="relative w-full h-full">
+              <Image
+                src="/hero/hero-image-1.jpg"
+                alt="Multiple products image"
+                fill
+                sizes="100vw"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <div className="relative w-full h-full">
+              <Image
+                src="/hero/hero-image-2.jpg"
+                alt="Product image with a baby"
+                fill
+                sizes="100vw"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
+            <div className="relative w-full h-full">
+              <Image
+                src="/hero/hero-image-3.jpg"
+                alt="Multiple products image with a toy"
+                fill
+                sizes="100vw"
+                style={{ objectFit: "cover" }}
+              />
+            </div>
           </Carousel>
+          ;
         </Flowbite>
 
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-end text-center text-white py-20">
@@ -64,7 +87,7 @@ const HeroSection = () => {
           {/* Hero Section Text and Buttons */}
           <div className="relative z-20 px-[16px] lg:px-0">
             <h1 className="text-[32px] md:text-[48px] lg:text-[64px] mb-4 font-DreamAvenue">
-              Welcome to Your Baby's Skin Journey
+              Welcome to Your Baby&apos; Skin Journey
             </h1>
             <div className="space-x-4">
               <ScrollButton href="#more-information" variant="secondary">

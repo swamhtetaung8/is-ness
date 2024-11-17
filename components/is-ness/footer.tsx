@@ -4,7 +4,6 @@ import MainHeading from "./text/mainHeading";
 import { Mail, MapPinned, Phone } from "lucide-react";
 import NormalText from "./text/normalText";
 import Image from "next/image";
-import Link from "next/link";
 
 const Footer = () => {
   return (
