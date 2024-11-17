@@ -10,7 +10,7 @@ const howToUseSteps = [
     image: "/how-to-use/refrigerator.png",
     mainText: "Refrigerate",
     description:
-      "Keep the lotion in the fridge to preserve its purity and effectiveness, just like you carefully store your breast milk.",
+      "Keep the lotion in the fridge to preserve its purity and effectiveness, just like you carefully store your breast milk. It will stay fresh and effective for up to 3 months when refrigerated.",
   },
   {
     id: 2,
