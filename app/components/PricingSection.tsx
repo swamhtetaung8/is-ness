@@ -1,5 +1,4 @@
 import AnchorTag from "@/components/is-ness/anchor_tag";
-import Button from "@/components/is-ness/button";
 import Container from "@/components/is-ness/container";
 import DescriptivePanel from "@/components/is-ness/descriptivePanel";
 import HeadingAndParagraphContainer from "@/components/is-ness/spacing/headingAndParagraphContainer";

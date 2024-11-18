@@ -1,7 +1,6 @@
 "use client";
 
 import AnchorTag from "@/components/is-ness/anchor_tag";
-import Button from "@/components/is-ness/button";
 import ScrollButton from "@/components/is-ness/scrollButton";
 import { Carousel, CustomFlowbiteTheme, Flowbite } from "flowbite-react";
 import Image from "next/image";
