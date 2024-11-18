@@ -77,7 +77,6 @@ const HeroSection = () => {
               />
             </div>
           </Carousel>
-          ;
         </Flowbite>
 
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-end text-center text-white py-20">

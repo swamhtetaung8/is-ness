@@ -34,7 +34,7 @@ const MoreInformationSection = () => {
       <div className="flex-1">
         <HeadingAndParagraphContainer>
           <HeadingAndSubHeadingContainer>
-            <MainHeading>A Mother’s Touch, Perfected</MainHeading>
+            <MainHeading>A Mother&apos;s Touch, Perfected</MainHeading>
             <SubHeading>
               Your milk, handcrafted into a nourishing lotion for your little
               one
@@ -47,16 +47,16 @@ const MoreInformationSection = () => {
             </ParagraphText>
             <ParagraphText>
               Our bespoke service allows you to transform your breast milk into
-              a luxurious, all-natural lotion, perfectly crafted for your baby’s
-              delicate skin.
+              a luxurious, all-natural lotion, perfectly crafted for your
+              baby&apos;s delicate skin.
             </ParagraphText>
             <ParagraphText>
-              We’ll create a luxurious, natural lotion using only breastmilk,
-              the finest oils and butters.
+              We&apos;ll create a luxurious, natural lotion using only
+              breastmilk, the finest oils and butters.
             </ParagraphText>
             <ParagraphText>
-              Each jar is a perfect blend of nutrients, crafted for your baby’s
-              delicate skin.
+              Each jar is a perfect blend of nutrients, crafted for your
+              baby&apos;s delicate skin.
             </ParagraphText>
           </div>
         </HeadingAndParagraphContainer>

@@ -8,7 +8,7 @@ const WeEmpathize = () => {
   return (
     <Container
       includePaddingBlock
-      className="relative w-full min-h-[600px] lg:min-h-[800px] xl:min-h-screen flex items-end"
+      className="relative w-full min-h-[600px] lg:min-h-[800px] xl:min-h-[900px] flex items-end"
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-black/70 z-10"></div>
