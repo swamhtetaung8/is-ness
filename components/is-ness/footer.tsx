@@ -56,11 +56,12 @@ const Footer = () => {
                 ></Image>
               </div>
               <a
-                href=""
+                href="https://line.me/R/ti/p/@674uogcn?from=page&accountId=674uogcn"
+                target="_blank"
                 className="underline hover:text-isness-primary transition-colors duration-200"
               >
                 <NormalText>@isness</NormalText>
-              </a>{" "}
+              </a>
             </div>
           </div>
         </div>

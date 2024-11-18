@@ -8,12 +8,14 @@ import PricingSection from "./components/PricingSection";
 import QuoteSection from "./components/QuoteSection";
 import SafeAndSimpleDeliveryProcessSection from "./components/SafeAndSimpleDeliveryProcessSection";
 import SlideShow from "./components/SlideShow";
+import WeEmpathize from "./components/WeEmpathize";
 
 export default function Home() {
   return (
     <main className="font-Scripter">
       <HeroSection />
       <MoreInformationSection />
+      <WeEmpathize />
       <IngredientsSection />
       <HowToUseSection />
       <QuoteSection />

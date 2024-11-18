@@ -26,7 +26,7 @@ const ingredients = [
   {
     id: 3,
     name: "cocoa butter",
-    image: "/ingredients/cocoa-butter.jpg",
+    image: "/ingredients/coconut-butter.jpg",
     explanation:
       "Enriched with essential fatty acids, works synergistically with the nutrients from breast milk to deeply nourish each layer of a baby’s brand-new skin. This combination provides intensive hydration, enhances skin elasticity",
   },
@@ -82,7 +82,7 @@ const IngredientsSection = () => {
       <HeadingAndParagraphContainer>
         <HeadingAndSubHeadingContainer>
           <MainHeading>Ingredients</MainHeading>
-          <SubHeading>Nature’s Purest Care for Your Baby</SubHeading>
+          <SubHeading>Nature&apos;s Purest Care for Your Baby</SubHeading>
         </HeadingAndSubHeadingContainer>
         <div className="grid grid-cols-3 md:gap-x-[64px] lg:gap-x-[80px] gap-x-[32px] gap-y-[32px]">
           {ingredients.map((ingredient) => (
@@ -91,7 +91,7 @@ const IngredientsSection = () => {
         </div>
       </HeadingAndParagraphContainer>
 
-      <div className="absolute right-3 lg:w-[160px] lg:h-[160px] lg:bottom-2 top-2 lg:top-auto w-[80px] h-[80px] -rotate-12">
+      <div className="absolute right-3 lg:w-[160px] lg:h-[160px] xl:bottom-2 top-2 xl:top-auto w-[80px] h-[80px] -rotate-12">
         <Image
           fill
           src="/ingredients/natural-product.png"
