@@ -18,8 +18,8 @@ const WeEmpathize = () => {
         alt="image of a mom breast feeding her child"
         className="object-cover"
       ></Image>
-      <div className="relative w-full xl:w-2/5 p-[24px] lg:p-[32px] bg-white z-20 space-y-[8px]">
-        <MainHeading className="tracking-wider">We Empathize</MainHeading>
+      <div className="relative w-full xl:w-2/5 p-[24px] lg:p-[32px] bg-isness-white z-20 space-y-[8px] rounded-lg shadowlg">
+        <MainHeading className="tracking-wider">At isness</MainHeading>
         <ParagraphText>
           We deeply understand the care, effort, and love that goes into
           expressing and preserving your breast milk. It&apos;s not just

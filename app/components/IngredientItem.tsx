@@ -65,12 +65,14 @@ const IngredientItem = ({ ingredient }: IngredientItemProps) => {
               ></Image>
             </div>
           </HoverCardTrigger>
-          <HoverCardContent className="w-auto lg:max-w-[300px] max-w-[200px]">
+          <HoverCardContent className="w-auto lg:max-w-[300px] max-w-[200px] bg-[#008149]">
             <div className="text-left">
-              <SubHeading className="capitalize text-center">
+              <SubHeading className="capitalize text-center text-white font-semibold">
                 {ingredient.name}
               </SubHeading>
-              <NormalText>{ingredient.explanation}</NormalText>
+              <NormalText className="text-white">
+                {ingredient.explanation}
+              </NormalText>
             </div>
           </HoverCardContent>
         </HoverCard>
@@ -96,12 +98,14 @@ const IngredientItem = ({ ingredient }: IngredientItemProps) => {
               ></Image>
             </div>
           </HoverCardTrigger>
-          <HoverCardContent className="w-auto lg:max-w-[300px] max-w-[200px]">
+          <HoverCardContent className="w-auto lg:max-w-[300px] max-w-[200px] bg-[#008149]">
             <div className="text-left">
-              <SubHeading className="capitalize text-center">
+              <SubHeading className="capitalize text-center text-white font-semibold">
                 {ingredient.name}
               </SubHeading>
-              <NormalText>{ingredient.explanation}</NormalText>
+              <NormalText className="text-white">
+                {ingredient.explanation}
+              </NormalText>
             </div>
           </HoverCardContent>
         </HoverCard>
