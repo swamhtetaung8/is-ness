@@ -86,7 +86,7 @@ const HeroSection = () => {
           {/* Hero Section Text and Buttons */}
           <div className="relative z-20 px-[16px] lg:px-0">
             <h1 className="text-[32px] md:text-[48px] lg:text-[64px] mb-4 font-DreamAvenue">
-              Welcome to Your Baby&apos; Skin Journey
+              Welcome to Your Baby&apos;s Skin Journey
             </h1>
             <div className="space-x-4">
               <ScrollButton href="#more-information" variant="secondary">
