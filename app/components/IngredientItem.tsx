@@ -58,7 +58,9 @@ const IngredientItem = ({ ingredient }: IngredientItemProps) => {
                 src={ingredient.image}
                 alt={`Image of ${ingredient.name}`}
                 className={`transition-transform duration-700 object-cover object-center ${
-                  isOpen && "scale-105"
+                  isOpen && ingredient.name === "final product" && "scale-125"
+                } ${
+                  isOpen && ingredient.name !== "final product" && "scale-105"
                 }`}
               ></Image>
             </div>
@@ -88,7 +90,9 @@ const IngredientItem = ({ ingredient }: IngredientItemProps) => {
                 fill
                 src={ingredient.image}
                 alt={`Image of ${ingredient.name}`}
-                className="group-hover:scale-105 transition-transform duration-700 object-cover object-center"
+                className={`group-hover:scale-105 transition-transform duration-700 object-cover object-center ${
+                  ingredient.name === "final product" && "group-hover:scale-125"
+                }`}
               ></Image>
             </div>
           </HoverCardTrigger>
