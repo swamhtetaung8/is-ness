@@ -3,21 +3,24 @@ import { cn } from "@/lib/utils";
 
 interface ScrollButtonProps {
   children: React.ReactNode;
-  variant: "primary" | "secondary";
+  variant: "primary" | "secondary" | "normal";
   href: string;
+  onClick?: () => void;
 }
 
-const ScrollButton = ({ children, variant, href }: ScrollButtonProps) => {
+const ScrollButton = ({ children, variant, href, onClick }: ScrollButtonProps) => {
   return (
     <a
       href={href}
       className={cn(
-        "px-6 md:px-8 py-2 transition-colors inline-block duration-300",
+        "py-2 transition-colors inline-block duration-300",
         {
-          "bg-isness-primary text-white border border-isness-primary hover:bg-transparent hover:text-isness-primary":
+          "px-6 md:px-8 bg-isness-primary text-white border border-isness-primary hover:bg-transparent hover:text-isness-primary":
             variant === "primary",
-          "bg-transparent text-white border border-white hover:bg-white hover:text-black":
+          "px-6 md:px-8 bg-transparent text-white border border-white hover:bg-white hover:text-black":
             variant === "secondary",
+          "":
+          variant === "normal",
         }
       )}
       onClick={(event) => {
@@ -25,6 +28,9 @@ const ScrollButton = ({ children, variant, href }: ScrollButtonProps) => {
         const target = document.querySelector(href);
         if (target) {
           target.scrollIntoView({ behavior: "smooth" });
+        }
+        if (onClick) {
+          onClick();
         }
       }}
     >

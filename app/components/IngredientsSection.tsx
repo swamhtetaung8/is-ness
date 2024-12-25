@@ -78,6 +78,7 @@ const IngredientsSection = () => {
     <Container
       includePaddingBlock
       className="flex justify-center items-center bg-white text-center relative"
+      id="ingredients"
     >
       <HeadingAndParagraphContainer>
         <HeadingAndSubHeadingContainer>

@@ -8,7 +8,7 @@ import React from "react";
 
 const PricingSection = () => {
   return (
-    <section className="flex flex-col-reverse xl:flex-row">
+    <section className="flex flex-col-reverse xl:flex-row" id="pricing">
       <div className="flex-1 h-[670px] w-full relative hidden xl:block">
         <Image
           fill
