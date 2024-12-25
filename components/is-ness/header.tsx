@@ -6,8 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Container from "@/components/is-ness/container";
-import NormalText from "@/components/is-ness/text/normalText";
 import HomeLinks from "./header/home_links";
+import ShopRedirectButton from "./shop_redirect_button";
 
 const Header = () => {
   const pathName = usePathname();
@@ -26,13 +26,7 @@ const Header = () => {
 
         {/* Hamburger Menu */}
         <div className="flex-1 flex justify-end">
-          <a
-            href="https://line.me/R/ti/p/@674uogcn?from=page&accountId=674uogcn"
-            target="_blank"
-            className="hover:text-isness-primary hover:underline transition-colors duration-200"
-          >
-            <NormalText>Shop</NormalText>
-          </a>
+          <ShopRedirectButton insideNavbar />
         </div>
         
       </nav>

@@ -1,6 +1,6 @@
-import AnchorTag from "@/components/is-ness/anchor_tag";
 import Container from "@/components/is-ness/container";
 import DescriptivePanel from "@/components/is-ness/descriptivePanel";
+import ShopRedirectButton from "@/components/is-ness/shop_redirect_button";
 import HeadingAndParagraphContainer from "@/components/is-ness/spacing/headingAndParagraphContainer";
 import MainHeading from "@/components/is-ness/text/mainHeading";
 import Image from "next/image";
@@ -38,13 +38,7 @@ const PricingSection = () => {
                 heading="Returning Customers - ฿2,500 / jar"
                 description="As a returning customer, you'll enjoy an exclusive discount on our custom lotion. A little thank-you for being part of our family and trusting us to care for your little one."
               />
-              <AnchorTag
-                href="https://line.me/R/ti/p/@674uogcn?from=page&accountId=674uogcn"
-                target
-                variant="primary"
-              >
-                Shop Now
-              </AnchorTag>{" "}
+              <ShopRedirectButton/>
             </div>
           </HeadingAndParagraphContainer>
         </Container>
