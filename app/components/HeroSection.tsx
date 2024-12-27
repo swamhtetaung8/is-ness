@@ -1,7 +1,7 @@
 "use client";
 
-import AnchorTag from "@/components/is-ness/anchor_tag";
 import ScrollButton from "@/components/is-ness/scrollButton";
+import ShopRedirectButton from "@/components/is-ness/shop_redirect_button";
 import { Carousel, CustomFlowbiteTheme, Flowbite } from "flowbite-react";
 import Image from "next/image";
 import React from "react";
@@ -45,7 +45,7 @@ const customCarouselTheme: CustomFlowbiteTheme = {
 const HeroSection = () => {
   return (
     <section>
-      <div className="h-[calc(100vh-80px)] relative">
+      <div className="h-[calc(100vh-72px)] relative">
         {/* Slideshow */}
         <Flowbite theme={{ theme: customCarouselTheme }}>
           <Carousel draggable={false} pauseOnHover>
@@ -92,13 +92,7 @@ const HeroSection = () => {
               <ScrollButton href="#more-information" variant="secondary">
                 View More
               </ScrollButton>
-              <AnchorTag
-                href="https://line.me/R/ti/p/@674uogcn?from=page&accountId=674uogcn"
-                target
-                variant="primary"
-              >
-                Shop Now
-              </AnchorTag>
+              <ShopRedirectButton/>
             </div>
           </div>
         </div>

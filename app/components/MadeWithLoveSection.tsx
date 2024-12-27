@@ -2,20 +2,20 @@ import Card from "@/components/is-ness/card";
 import Container from "@/components/is-ness/container";
 import HeadingAndParagraphContainer from "@/components/is-ness/spacing/headingAndParagraphContainer";
 import MainHeading from "@/components/is-ness/text/mainHeading";
-import { HandHeart, Recycle, Signature } from "lucide-react";
+import { HandHeart, Leaf, Recycle } from "lucide-react";
 import React from "react";
 
 const madeWithLoveSteps = [
   {
     id: 1,
-    image: "/made-with-love/custom-engraving.jpg",
+    image: "/made-with-love/nourishing-with-nature.jpg",
     mainText: (
       <span className="flex items-center xl:gap-4 flex-col xl:flex-row">
-        <span>Custom engraving</span> <Signature className="w-6 h-6" />
+        <span>Nourishing with Nature</span> <Leaf className="w-6 h-6" />
       </span>
     ),
     description:
-      "With every first order, enjoy a personalized touch. A custom engraving of your baby’s name and date of birth on the keepsake box. A beautiful way to remember this special journey.",
+      "Crafted from pure natural oils, it complements mother's milk, gently nourishing and protecting your baby’s delicate skin.",
   },
   {
     id: 2,
@@ -26,7 +26,7 @@ const madeWithLoveSteps = [
       </span>
     ),
     description:
-      "Because we love our planet, all returning orders come in eco-friendly packaging, designed with care for the earth and for you.",
+      "Because we love our planet, all orders come in eco-friendly packaging, designed with care for the earth and for you.",
   },
   {
     id: 3,

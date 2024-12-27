@@ -10,6 +10,7 @@ const Footer = () => {
     <Container
       includePaddingBlock
       className="bg-white divide-y-[1px] divide-isness-primary/40"
+      id="contact"
     >
       <div className="grid xl:grid-cols-3 grid-cols-1 md:grid-cols-2 justify-items-stretch gap-y-[32px] pb-4 lg:pb-8">
         <div className="md:space-y-[32px] space-y-[16px]">
