@@ -40,7 +40,7 @@ const ShopRedirectButton = ({ insideNavbar = false } : { insideNavbar?: boolean 
         </AlertDialogHeader>
         <AlertDialogFooter>
           <AlertDialogCancel className="rounded-none py-2 px-4 md:px-6">Cancel</AlertDialogCancel>
-          <AlertDialogAction className="bg-isness-primary rounded-none py-2 px-4 md:px-6">
+          <AlertDialogAction className="bg-isness-primary rounded-none py-2 px-4 md:px-6" asChild>
             <a href="https://line.me/R/ti/p/@674uogcn?from=page&accountId=674uogcn"
                 target="_blank">Proceed</a>
           </AlertDialogAction>
