@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/is-ness/header";
 import Footer from "@/components/is-ness/footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const dreamAvenue = localFont({
   src: "./fonts/DreamAvenue.ttf",
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
